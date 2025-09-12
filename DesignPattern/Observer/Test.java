@@ -12,11 +12,11 @@ public class Test {
         weatherStation.addObserver(windowDisplay);
         weatherStation.addObserver(anotherWindowDisplay);
 
-        weatherStation.setTemperature(25);
-        weatherStation.setTemperature(30);
+        weatherStation.setData(25);
+        weatherStation.setData(30);
 
         weatherStation.removeObserver(phoneDisplay);
 
-        weatherStation.setTemperature(20);
+        weatherStation.setData(20);
     }
 }

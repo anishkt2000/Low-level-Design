@@ -9,6 +9,6 @@ public class TVDisplayObserver implements DisplayObserver{
 
     @Override
     public void update() {
-        System.out.println("TV Display: Temperature updated to " + weatherStation.getTemperature() + "°C");
+        System.out.println("TV Display: Temperature updated to " + weatherStation.getData() + "°C");
     }
 }

@@ -4,10 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class WsObservableImp implements WeatherStationInterface{
-    private int currentTemperature;
+    private int data;
     List<DisplayObserver> displayList;
     WsObservableImp(){
-        this.currentTemperature=0;
+        this.data=0;
         this.displayList=new ArrayList<>();
     }
     @Override
@@ -28,13 +28,13 @@ public class WsObservableImp implements WeatherStationInterface{
     }
 
     @Override
-    public void setTemperature(int temperature) {
-        this.currentTemperature=temperature;
+    public void setData(int data) {
+        this.data=data;
         this.notifyObservers();
     }
 
     @Override
-    public float getTemperature() {
-        return currentTemperature;
+    public float getData() {
+        return this.data;
     }
 }
